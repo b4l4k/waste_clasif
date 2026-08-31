@@ -46,3 +46,6 @@ The model could be improved with more relevant images, better class balancing an
 
 Here we have some validation results (CV Fold 1)
 <img width="1920" height="1428" alt="val_batch2_pred" src="https://github.com/user-attachments/assets/7a6606fd-67ce-458d-8b1d-f0ca88adca0d" />
+
+
+In the end I think it is remarkable to say that the main reason of such a low rates, is that there is a small amount of images in the TACO dataset, comes with highly unbalanced classes.
