@@ -5,7 +5,7 @@ The main goal is to fine-tune a pretrained YOLO model using only the
 [TACO dataset](http://tacodataset.org/) and evaluate the best
 performance achievable with this dataset.
 
-Because I am familiar with notebooks and find them more presentable, the training and evaluation are included in a notebook. The TACO dataset files are not included in this repository. However, the repository contains a script for converting the annotations from COCO format to YOLO format.
+Because I am familiar with notebooks and find them more presentable (not in this case), the training and evaluation are included in a notebook. The TACO dataset files are not included in this repository. However, the repository contains a script for converting the annotations from COCO format to YOLO format.
 
 The most important resources that helped me understand how to approach this project are the following:
 
