@@ -26,3 +26,19 @@ After executing many experiments in notebook I get the next results:
 | Training 2 |     50 |        960 | 1200 train / 150 validation / 150 test |         0.215 |         0.154 |
 | Training 3 |     50 |        960 | Four-fold cross-validation (each run aprox 1012 train and 338 validation / 150 test)  | 0.270 ± 0.027 | 0.208 ± 0.022 |
 
+At this point I saw that the comparison wasn't fair, so I decided to do a common test evaluation, adding also precision and recall:
+
+|model|group|precision|recall|mAP50|mAP50-95|
+|---|---|---|---|---|---|
+|Training 1|single\_split|0\.310047|0\.233260|0\.201000|0\.150287|
+|Training 2|single\_split|0\.357134|0\.277987|0\.212594|0\.152524|
+|CV Fold 1|cross\_validation|0\.373824|0\.297314|0\.269231|0\.186291|
+|CV Fold 2|cross\_validation|0\.346033|0\.243694|0\.233916|0\.173992|
+|CV Fold 3|cross\_validation|0\.246805|0\.302374|0\.232977|0\.168367|
+|CV Fold 4|cross\_validation|0\.362129|0\.258383|0\.234328|0\.177216|
+
+CV Fold 1 achieved the best overall test performance according to the mAP metrics. However, CV Fold 3 achieved a slightly higher recall (0.302), but its precision and mAP values were lower.
+
+These results show that training with different data splits and larger validation sets helped achieve better mAP scores on this test set. Still, cross-validation does not guarantee a better model every time.
+
+The model could be improved with more relevant images, better class balancing and further tuning. However, these results are enough for this exploratory project and demonstrate the complete process of preparing the data, fine-tuning YOLO and evaluating the model.
