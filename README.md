@@ -42,3 +42,7 @@ CV Fold 1 achieved the best overall test performance according to the mAP metric
 These results show that training with different data splits and larger validation sets helped achieve better mAP scores on this test set. Still, cross-validation does not guarantee a better model every time.
 
 The model could be improved with more relevant images, better class balancing and further tuning. However, these results are enough for this exploratory project and demonstrate the complete process of preparing the data, fine-tuning YOLO and evaluating the model.
+
+
+Here we have some validation results (CV Fold 1)
+<img width="1920" height="1428" alt="val_batch2_pred" src="https://github.com/user-attachments/assets/7a6606fd-67ce-458d-8b1d-f0ca88adca0d" />
