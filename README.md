@@ -49,3 +49,10 @@ Here we have some validation results (CV Fold 1)
 
 
 In the end I think it is remarkable to say that the main reason of such a low rates, is that there is a small amount of images in the TACO dataset, comes with highly unbalanced classes.
+
+For fun, I decided to try it using my own photo of litter I found in the trash at home. As you can see, the results matched what the indicators showed (the only correctly classified object was the plastic bottle in the top-left corner). The other objects, like the glass jar (which should have been classified as 'Other'), the wrapper (which should have been classified as 'Plastic bag + wrapper') and the napkin (which should have been classified as 'Other') were classified incorrectly.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e0c11f43-559d-47af-822c-0af299b40e84" alt="Original litter photograph" width="49%">
+  <img src="https://github.com/user-attachments/assets/fbb3a634-39e7-4fd1-bb91-4aabfe3028fb" alt="Litter classification results" width="49%">
+</p>
